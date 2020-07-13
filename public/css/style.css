@@ -16,6 +16,9 @@
   height: 25rem;
 }
 
+/*
+My initial settings
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -45,16 +48,19 @@
   height: 2rem;
   border: 1px solid ghostwhite;
 }
+*/
 
 .product-design-course {
   background-color: #ffffff;
   width: 80%;
   margin: 4rem auto;
   padding: 3rem 2rem;
-  border-radius: 3%;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px -25px #5d5d5d;
 }
 
-.first-image, .about-image {
+.first-image,
+.about-image {
   max-width: 100%;
   margin: auto;
 }
@@ -73,19 +79,19 @@
   height: 2rem;
   margin: 0 auto;
   text-align: center;
-  border-radius: 5%;
+  border-radius: 7px;
   line-height: 2rem;
   margin-top: 3rem;
 }
 
 .ui-ux {
   max-width: 100%;
-  margin: 1rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .ui-ux-p {
   position: absolute;
-  top: 5rem;
+  top: 2.5rem;
   z-index: 999;
   color: #8d8d8d;
 }
@@ -94,20 +100,316 @@
   background-color: #ffffff;
   width: 80%;
   margin: 4rem auto;
-  margin-top: 40rem;
-  padding: 0rem 2rem;
-  border-radius: 3%;
+  margin-top: 50rem;
+  padding: 8rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px -25px #5d5d5d;
 }
 
-.about-images  {
+.about-images {
   position: relative;
+  margin: auto;
+  text-align: center;
 }
 
 .first-about-image {
   position: absolute;
-  top: -3rem;
+  top: -14rem;
+}
+
+.about-header {
+  position: relative;
 }
 
 .about-header > p {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: bolder;
+  opacity: 0.05;
+}
+
+.about-header > h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 2rem;
+}
+
+.about-social-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 6rem;
+  margin: 1rem auto;
+}
+
+.about-para-div > p {
+  margin-top: 5rem;
+}
+
+.experience-div {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 10px 30px -25px #5d5d5d;
+}
+
+.experience-subheading {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  margin: 2rem 10%;
+}
+
+.first-subhead{
+  border-right: 1px solid #828282;
+}
+
+.third-subhead {
+  background-color: #000000;
+  color: #808080;
+  border-radius: 0px 12px 12px 0px;
+  border-left: 1px solid #828282;
+
+}
+
+.experience-para {
+  margin: 5rem auto;
+  text-align: left;
+}
+
+.experience-para p:last-of-type {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  #menuToggle > input,
+  #menuToggle > span {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 8rem;
+    /* background-color: green; */
+  }
+
+  .logo-div {
+    width: 15%;
+    height: 3rem;
+    /* background-color: red; */
+  }
+
+  #menuToggle {
+    width: 85%;
+    display: flex;
+    /* background: linen; */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-product-factory {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 3rem;
+  }
+
+  #menu a {
+    color: white;
+  }
+
+  #menu a:last-of-type {
+    border: 1px solid red;
+    background-color: #292929;
+  }
+
+  .product-design-course {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 3rem 8%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px -25px #5d5d5d;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .first-image-div {
+    padding: 0% 10%;
+  }
+
+  .first-image,
+  .about-image {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .first-para-div {
+    color: black;
+    margin: 0rem auto;
+    position: relative;
+    width: 70%;
+    text-align: left;
+    line-height: 2rem;
+  }
+
+  .start-register-div {
+    background-color: #f46632;
+    color: #fccfbf;
+    max-width: 15rem;
+    height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 7px;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+
+  .about-section {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 4rem auto;
+    margin-top: 22rem;
+    padding: 1rem 8%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px -25px #5d5d5d;
+  }
+
+  .about-images {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .first-about-image {
+    position: absolute;
+    text-align: left;
+    top: -75px;
+  }
+
+  .about-image {
+    margin: 0;
+    max-width: 50%;
+  }
+  
+  .about-header {
+    position: relative;
+    margin-left: 50%;
+    width: 100%;
+  }
+  
+  .about-header > p {
+    font-size: 4rem;
+    font-weight: bolder;
+    opacity: 0.05;
+  }
+  
+  .about-header > h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2rem;
+  }
+  
+  .about-social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .about-social-links img {
+    padding: 5px 0px;
+  }
+  
+  .about-para-div > p {
+    margin: 2rem auto;
+    line-height: 2rem;
+  }
+
+  .experience-div {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 4rem auto;
+    padding: 3rem 8%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 10px 30px -25px #5d5d5d;
+  }
+  
+  .experience-header {
+    position: relative;
+    margin: auto;
+    width: 100%;
+  }
+
+  .experience-header > p {
+    font-size: 4rem;
+    font-weight: bolder;
+    opacity: 0.05;
+  }
+  
+  .experience-header > h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2rem;
+  }
+
+  .experience-subheading {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    margin: 2rem 10%;
+    font-size: 10px;
+    height: 35px;
+  }
+
+  .experience-subheading div {
+    line-height: 35px;
+    padding: 0 5%;
+  }
+  
+  .first-subhead {
+    border-right: 1px solid #828282;
+  }
+  
+  .third-subhead {
+    background-color: #000000;
+    color: #808080;
+    border-radius: 0px 12px 12px 0px;
+    border-left: 1px solid #828282;
+  }
+
+  .experience-body {
+    display: flex;
+  }
+  
+  .experience-para {
+    margin: 5rem auto;
+    text-align: left;
+  }
+  
+  .experience-para p:last-of-type {
+    margin-top: 2rem;
+  }
 }
